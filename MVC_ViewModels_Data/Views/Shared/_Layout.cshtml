@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+</head>
+<body>
+    <header>
+        <div>
+            <ul>
+                <li>
+                    <a class="nav_link"> @Html.ActionLink("People", "Index", "People", null, new { @class = "actionLink" }) </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer>©Jayanthi Priyanka @DateTime.Now.ToString("yy-MM-dd")</footer>
+
+</body>
+</html>
